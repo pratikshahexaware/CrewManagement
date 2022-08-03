@@ -1,0 +1,28 @@
+
+.formInput{ 
+    span{
+        font-size: 12px;
+        padding: 3px;
+        color: red;
+        display: none;
+    }
+    input:invalid[focused="true"]{
+        border: 1px solid red;
+    }
+    
+    input:invalid[focused="true"] ~ span{
+        display: block;
+    }
+    input {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid gray;
+      }
+    select{
+        width: 100%;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+}
